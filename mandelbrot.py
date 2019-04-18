@@ -6,8 +6,8 @@ from matplotlib.animation import FuncAnimation
 num = 3000
 max_iter = 50
 
-x = np.linspace(-2, 1, 2*num)
-y = np.linspace(-1, 0, num).reshape(-1, 1)
+x = np.linspace(-2, 2, 2*num)
+y = np.linspace(-2, 0, num).reshape(-1, 1)
 c = x + y * 1j
 z = np.zeros(c.shape) + 0j
 q = (x - 0.25) ** 2 + y * y
