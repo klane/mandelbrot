@@ -11,7 +11,7 @@ y = np.linspace(-1, 0, num).reshape(-1, 1)
 c = x + y * 1j
 z = np.zeros(c.shape) + 0j
 in_set = np.ones(c.shape, dtype=bool)
-iterations = np.zeros(c.shape)
+iterations = np.zeros(c.shape, dtype=int)
 
 fig = plt.figure()
 plt.axis('off')
