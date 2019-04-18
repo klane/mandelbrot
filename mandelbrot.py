@@ -31,8 +31,9 @@ def init():
 def update(i):
     global z, in_set, iterations
     z[in_set] = z[in_set] * z[in_set] + c[in_set]
+    in_set_prev = np.copy(in_set)
     in_set = z.real*z.real + z.imag*z.imag <= 4
-    iterations[in_set] += 1
+    iterations[~in_set & in_set_prev] = i+1
 
     img.set_data(np.vstack((iterations, np.flipud(iterations))))
     img.set_clim(0, i)
