@@ -15,7 +15,7 @@ iterations = np.zeros(c.shape, dtype=int)
 
 fig = plt.figure()
 plt.axis('off')
-img = plt.imshow(np.vstack((iterations, np.flipud(iterations))))
+img = plt.imshow(np.vstack((iterations, np.flipud(iterations))), cmap='gnuplot2')
 
 
 def update(i):
