@@ -18,8 +18,18 @@ plt.axis('off')
 img = plt.imshow(np.vstack((iterations, np.flipud(iterations))), cmap='gnuplot2')
 
 
+def init():
+    global z, in_set, iterations
+    z = np.zeros(c.shape) + 0j
+    in_set = np.ones(c.shape, dtype=bool)
+    iterations = np.zeros(c.shape, dtype=int)
+    img.set_data(np.vstack((iterations, np.flipud(iterations))))
+
+    return img
+
+
 def update(i):
-    global in_set
+    global z, in_set, iterations
     z[in_set] = z[in_set] * z[in_set] + c[in_set]
     in_set = z.real*z.real + z.imag*z.imag <= 4
     iterations[in_set] += 1
@@ -30,5 +40,5 @@ def update(i):
     return img
 
 
-animation = FuncAnimation(fig, update, frames=max_iter)
+animation = FuncAnimation(fig, update, init_func=init, frames=max_iter)
 plt.show()
