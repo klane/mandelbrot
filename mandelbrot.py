@@ -6,6 +6,7 @@ from matplotlib.animation import FuncAnimation
 d = 2
 num = 3000
 max_iter = 50
+save_animation = True
 
 x = np.linspace(-2, 2, 2*num)
 y = np.linspace(-2, 0, num).reshape(-1, 1)
@@ -53,4 +54,8 @@ def update(i):
 
 
 animation = FuncAnimation(fig, update, init_func=init, frames=max_iter)
-plt.show()
+
+if save_animation:
+    animation.save('./assets/mandelbrot-d{}.gif'.format(d), writer='imagemagick', fps=5)
+else:
+    plt.show()
