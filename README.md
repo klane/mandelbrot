@@ -5,6 +5,6 @@ Python implementation of the [Mandelbrot set](https://en.wikipedia.org/wiki/Mand
 
 # Multibrot sets
 
-<img src="https://raw.githubusercontent.com/klane/mandelbrot/master/assets/mandelbrot-d3.gif" width="200"> <img src="https://raw.githubusercontent.com/klane/mandelbrot/master/assets/mandelbrot-d4.gif" width="200">
+<img src="https://raw.githubusercontent.com/klane/mandelbrot/master/assets/mandelbrot-d3.gif" width="500"> <img src="https://raw.githubusercontent.com/klane/mandelbrot/master/assets/mandelbrot-d4.gif" width="500">
 
-<img src="https://raw.githubusercontent.com/klane/mandelbrot/master/assets/mandelbrot-d5.gif" width="200"> <img src="https://raw.githubusercontent.com/klane/mandelbrot/master/assets/mandelbrot-d6.gif" width="200">
+<img src="https://raw.githubusercontent.com/klane/mandelbrot/master/assets/mandelbrot-d5.gif" width="500"> <img src="https://raw.githubusercontent.com/klane/mandelbrot/master/assets/mandelbrot-d6.gif" width="500">
