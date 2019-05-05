@@ -56,6 +56,6 @@ def update(i):
 animation = FuncAnimation(fig, update, init_func=init, frames=max_iter)
 
 if save_animation:
-    animation.save('./assets/mandelbrot-d{}.gif'.format(d), writer='imagemagick', fps=5)
+    animation.save('./assets/mandelbrot-d{}.gif'.format(d), writer='imagemagick', fps=5, dpi=300)
 else:
     plt.show()
