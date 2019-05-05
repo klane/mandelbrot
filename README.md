@@ -4,6 +4,7 @@ Python implementation of the [Mandelbrot set](https://en.wikipedia.org/wiki/Mand
 ![mandelbrot](https://raw.githubusercontent.com/klane/mandelbrot/master/assets/mandelbrot-d2.gif)
 
 # Multibrot sets
+Multibrot sets are a generalization of the Mandelbrot set with an arbitrary exponent <img src="https://latex.codecogs.com/svg.latex?\inline&space;d" title="d" /> that takes the form <img src="https://latex.codecogs.com/svg.latex?\inline&space;f(z)&space;=&space;z^d&space;&plus;&space;c" title="f(z) = z^d + c" />.
 
 <p align="center">
     <img src="https://raw.githubusercontent.com/klane/mandelbrot/master/assets/mandelbrot-d3.gif" width="425"> <img src="https://raw.githubusercontent.com/klane/mandelbrot/master/assets/mandelbrot-d4.gif" width="425">
