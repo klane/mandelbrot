@@ -6,7 +6,7 @@ from matplotlib.animation import FuncAnimation
 d = 2
 num = 3000
 max_iter = 50
-save_animation = True
+save_animation = False
 
 x = np.linspace(-2, 2, 2*num)
 y = np.linspace(-2, 0, num).reshape(-1, 1)
