@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 
 d = 2
-num = 3000
-max_iter = 50
+num = 2000
+max_iter = 25
 save_animation = False
 
 x = np.linspace(-2, 2, 2*num)
